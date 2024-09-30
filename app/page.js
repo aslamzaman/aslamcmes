@@ -13,7 +13,7 @@ export default function Home() {
         id: Date.now(),
         name: "Male"
       }
-      const url = `http://localhost:3000/api/gender`;
+      const url = `https://aslamcmes.vercel.app/api/gender`;
       const response = await fetch(url, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -38,7 +38,7 @@ export default function Home() {
   const showHandler = async () => {
     try {
 
-      const url = `http://localhost:3000/api/gender`;
+      const url = `https://aslamcmes.vercel.app/api/gender`;
       const response = await fetch(url, {
         method: "GET",
         headers: { "Content-Type": "application/json" }
